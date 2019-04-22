@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{margin:0; padding:0;}
+
+.container{
+	width: 90%;
+	margin: 10px auto;
+}
+.portfolio-menu{
+	text-align: center;
+}
+.portfolio-menu ul li{
+	display: inline-block;
+	margin: 0;
+	list-style: none;
+	padding: 10px 15px;
+	border: 1px solid tomato;
+	cursor: pointer;
+	transition: .5s;
+}
+.portfolio-menu ul li:hover{
+	background: tomato;
+	color: #fff;
+}
+.portfolio-item{
+	width: 100%;
+}
+.portfolio-item .item{
+	width: 30%;
+	float: left;
+	margin-bottom: 10px;
+}
+li.active{
+	background: tomato;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

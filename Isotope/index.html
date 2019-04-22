@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Team</title>
+		
+<!-- 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+ -->		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		
+
+		
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="font/font.css" />
+	</head>
+<body>
+
+
+<div class="wrp">
+	<div class="container">
+		<div class="portfolio-menu text-center">
+			<ul>
+				<li class="active" data-filter="*">All</li>
+				<li data-filter=".web">Web</li>
+				<li data-filter=".seo">Seo</li>
+				<li data-filter=".iso">iSO</li>
+			</ul>
+		</div> <!-- .portfolio-menu -->
+		<div class="portfolio-item">
+			<div class="item web">
+				<img src="img/1.jpg" alt="">
+			</div>
+			<div class="item seo">
+				<img src="img/2.jpg" alt="">
+			</div>
+			<div class="item iso">
+				<img src="img/3.jpg" alt="">
+			</div>
+			<div class="item web seo">
+				<img src="img/4.jpg" alt="">
+			</div>
+			<div class="item web iso">
+				<img src="img/5.jpg" alt="">
+			</div>
+			<div class="item web seo iso">
+				<img src="img/6.jpg" alt="">
+			</div>
+			<div class="item iso seo">
+				<img src="img/7.jpg" alt="">
+			</div>
+			<div class="item web seo">
+				<img src="img/6.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+<!-- 	<script src="js/bootstrap.min.js"></script>
+ -->	
+ 	<script src="js/isotope.pkgd.js"></script>
+
+	
+<script>
+	$('.portfolio-item').isotope({
+		itemSelector:'.item',
+		layoutMode: 'fitRows'
+	});
+	$('.portfolio-menu ul li').click(function(){
+		$('.portfolio-menu ul li').removeClass('active');
+		$(this).addClass('active');
+
+		var selector = $(this).attr('data-filter');
+		$('.portfolio-item').isotope({
+			filter: selector
+		});
+	});
+</script>
+	
+	
+</body>
+</html>
